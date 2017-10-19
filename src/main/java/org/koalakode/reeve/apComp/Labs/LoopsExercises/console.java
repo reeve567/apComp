@@ -7,33 +7,35 @@ import org.koalakode.reeve.apComp.Labs.LoopsExercises.Commands.QuadAndLog;
 
 import java.util.Scanner;
 
+import static org.koalakode.reeve.apComp.Funcs.println;
+
 public class console {
 	
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("Please enter a command to run, such as:");
-		System.out.println("pyramid");
-		System.out.println("quadAndLog");
-		System.out.println("multiplicationTable");
-		System.out.println("armstrongNumbers");
-		System.out.println("exit");
+		println("Please enter a command to run, such as:");
+		println("pyramid");
+		println("quadAndLog");
+		println("multiplicationTable");
+		println("armstrongNumbers");
+		println("exit");
 		while (true) {
-			System.out.println("Enter a command:");
+			println("Enter a command:");
 			String input = scanner.next();
 			if (input.equalsIgnoreCase("pyramid")) {
-				System.out.println("Please enter a size:");
+				println("Please enter a size:");
 				int size = scanner.nextInt();
 				Pyramid.run(size);
 			}
 			else if (input.equalsIgnoreCase("quadAndLog")) {
-				System.out.println("Please enter a size:");
+				println("Please enter a size:");
 				int size = scanner.nextInt();
 				QuadAndLog.run(size);
 			}
 			else if (input.equalsIgnoreCase("multiplicationTable")) {
-				System.out.println("Please enter a size for x:");
+				println("Please enter a size for x:");
 				int x = scanner.nextInt();
-				System.out.println("Please enter a size for y:");
+				println("Please enter a size for y:");
 				int y = scanner.nextInt();
 				MultiplicationTable.run(y,x);
 			}
@@ -44,7 +46,7 @@ public class console {
 				break;
 			}
 			else {
-				System.out.println("Unknown command!");
+				println("Unknown command!");
 			}
 		}
 	}

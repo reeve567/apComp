@@ -2,6 +2,8 @@ package org.koalakode.reeve.apComp.Labs.Pig;
 
 import java.util.Scanner;
 
+import static org.koalakode.reeve.apComp.Funcs.println;
+
 public class test {
 	
 	private static Scanner in = new Scanner(System.in);
@@ -12,28 +14,28 @@ public class test {
 	
 	public static void main(String[] args) {
 		while (true) {
-			System.out.println("Player one's turn");
+			println("Player one's turn");
 			turn(1);
-			System.out.println("Player two's turn");
+			println("Player two's turn");
 			turn(2);
 			
 			if (scoreOne >= 100 || scoreTwo >= 100) {
 				if (scoreOne >= 100 && scoreTwo >= 100) {
 					if (scoreOne > scoreTwo) {
-						System.out.println("Player one won!");
+						println("Player one won!");
 					}
 					else if (scoreOne < scoreTwo){
-						System.out.println("Player two won!");
+						println("Player two won!");
 					}
 					else {
-						System.out.println("It's a tie!");
+						println("It's a tie!");
 					}
 				}
 				else {
 					if (scoreOne >= 100) {
-						System.out.println("Player two won!");
+						println("Player two won!");
 					} else if (scoreTwo >= 100) {
-						System.out.println("Player two won!");
+						println("Player two won!");
 					}
 				}
 				
@@ -48,12 +50,12 @@ public class test {
 			int roll = (int) ((Math.random() * 6) + 1);
 			if (roll == 1) {
 				cont = false;
-				System.out.println("You rolled a 1! Your turn is over");
+				println("You rolled a 1! Your turn is over");
 				runningScore = 0;
 			} else {
 				runningScore += roll;
 				
-				System.out.println("You rolled a " + roll + ", would you like to continue? Your running score is " + runningScore + ".");
+				println("You rolled a " + roll + ", would you like to continue? Your running score is " + runningScore + ".");
 				
 				boolean found = false;
 				
@@ -67,15 +69,15 @@ public class test {
 						cont = false;
 						if (player == 1) {
 							scoreOne += runningScore;
-							System.out.println("Your score is " + scoreOne);
+							println("Your score is " + scoreOne);
 						}
 						else {
 							scoreTwo += runningScore;
-							System.out.println("Your score is " + scoreTwo);
+							println("Your score is " + scoreTwo);
 						}
 						runningScore = 0;
 					} else {
-						System.out.println("You entered " + s + ", expected y or n.");
+						println("You entered " + s + ", expected y or n.");
 					}
 				}
 			}

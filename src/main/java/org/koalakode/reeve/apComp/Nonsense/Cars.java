@@ -8,8 +8,8 @@ public class Cars {
         Car carThree = new Car();
         carTwo.addMiles(3500);
         carOne.checkAntique();
-        System.out.println(carOne);
-        System.out.println(carTwo);
+        println(carOne);
+        println(carTwo);
     }
 
 }

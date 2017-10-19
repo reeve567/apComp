@@ -2,6 +2,8 @@ package org.koalakode.reeve.apComp.WorkSheets;
 // made by reeve
 // on 4:24 PM
 
+import static org.koalakode.reeve.apComp.Funcs.println;
+
 public class ZeroFiveWS {
 
 	public static void main(String[] args) {
@@ -9,9 +11,9 @@ public class ZeroFiveWS {
 		Person personTwo = new Person("Lukas",19,"M");
 		Person personThree = new Person("Veronica",4,"F");
 
-		System.out.println(personTwo.getName());
-		System.out.println(personOne.getAge() + personTwo.getAge());
-		System.out.println(personThree.getGender());
+		println(personTwo.getName());
+		println(personOne.getAge() + personTwo.getAge());
+		println(personThree.getGender());
 
 		personOne.birthday();
 		personThree.birthday();

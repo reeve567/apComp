@@ -4,6 +4,8 @@ package org.koalakode.reeve.apComp.WorkSheets;
 
 import java.io.File;
 
+import static org.koalakode.reeve.apComp.Funcs.println;
+
 public class Person {
 
 	private String name;
@@ -41,7 +43,7 @@ public class Person {
 	}
 
 	public void introduce() {
-		System.out.println("Hello my name is " + name);
+		println("Hello my name is " + name);
 	}
 
 }

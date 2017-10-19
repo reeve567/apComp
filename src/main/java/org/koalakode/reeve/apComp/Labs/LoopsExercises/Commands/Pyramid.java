@@ -11,7 +11,7 @@ public class Pyramid {
 			for (int j = 0; j < num; j++) {
 				System.out.print('*');
 			}
-			System.out.println();
+			println();
 			num += 2;
 			
 		}

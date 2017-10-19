@@ -13,6 +13,8 @@ import java.applet.Applet;
 import java.awt.*;
 import java.util.*;
 
+import static org.koalakode.reeve.apComp.Funcs.println;
+
 public class Wator extends Applet
 {
 
@@ -91,7 +93,7 @@ public class Wator extends Applet
 		};
 		itsThread = new Thread(chronos);
 		itsThread.start();
-		System.out.println("started");
+		println("started");
 	}
 
 	// Called when the applet is told to stop.  This happens when the
@@ -101,7 +103,7 @@ public class Wator extends Applet
 	{
 		itsThread.stop();
 		itsThread = null;
-		System.out.println("Stopped");
+		println("Stopped");
 	}
 
 	// Called when part of the window has been damaged by a menu or
@@ -934,7 +936,7 @@ class Algae extends Animal
 	// I don't want the program to misbehave.  It's a benign tumor.
 	public void Tic(Graphics g, long tick, Wator w)
 	{
-		System.out.println("Algae Tic!!!");
+		println("Algae Tic!!!");
 	}
 
 	protected void ProcessTic(Graphics g, Wator w)

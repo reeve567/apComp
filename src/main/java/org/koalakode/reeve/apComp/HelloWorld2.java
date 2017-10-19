@@ -6,37 +6,37 @@ public class HelloWorld2 {
 
 	public static void main(String[] args) {
 
-		System.out.println(PINUM);
+		println(PINUM);
 
-		//  does the number integerOne + selected number in integerTwo and does the actio because of the System.out.println(integerTwo); (CaSe SeNsEtIvE)
+		//  does the number integerOne + selected number in integerTwo and does the actio because of the println(integerTwo); (CaSe SeNsEtIvE)
 
 		int integerOne = 69;
 
 		int integerTwo = integerOne + 11;
 
-		System.out.println(integerTwo);
+		println(integerTwo);
 
 		// shows the max for each data type
 
 		byte bigByte = 127;
 
-		System.out.println(Float.MAX_VALUE);
-		System.out.println(Double.MAX_VALUE);
+		println(Float.MAX_VALUE);
+		println(Double.MAX_VALUE);
 
-		// shows the char shown in the System.out.println means if i wrote char anotherChar = 'A' and write System.out.println(anotherChar) it would write that in
+		// shows the char shown in the println means if i wrote char anotherChar = 'A' and write println(anotherChar) it would write that in
 
 		char randomChar = 65;
 
-		System.out.println(randomChar);
+		println(randomChar);
 
-		// +-es the stuff in the System.out.println when you make the actions on the () you have put.
+		// +-es the stuff in the println when you make the actions on the () you have put.
 
 		String randomString = "I am a random string";
 		String anotherString = "Stuff";
 
 		String andAnotherString = randomString + ' ' + anotherString + ' ' + randomString;
 
-		System.out.println(andAnotherString);
+		println(andAnotherString);
 
 		String intString = Integer.toString(bigByte);
 
@@ -44,7 +44,7 @@ public class HelloWorld2 {
 
 		int stringToInt = Integer.parseInt(intString);
 
-		System.out.println(stringToInt);
+		println(stringToInt);
 
 	}
 }

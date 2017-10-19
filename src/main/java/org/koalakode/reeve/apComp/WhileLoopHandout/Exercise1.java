@@ -2,7 +2,7 @@ package org.koalakode.reeve.apComp.WhileLoopHandout;
 // made by reeve
 // on 12:38 PM
 
-import org.koalakode.reeve.apComp.Funcs;
+import static org.koalakode.reeve.apComp.Funcs.println;
 
 public class Exercise1 {
 
@@ -10,7 +10,7 @@ public class Exercise1 {
 		int x = 1;
 		while (x < 122) {
 			//print ascii codes
-			Funcs.println((char)(x));
+			println((char)(x));
 			x++;
 		}
 	}
