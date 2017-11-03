@@ -1,5 +1,7 @@
 package org.koalakode.reeve.apComp.Labs.LoopsExercises.Commands;
 
+import static org.koalakode.reeve.apComp.Funcs.println;
+
 public class Pyramid {
 	
 	public static void run(int rows) {
